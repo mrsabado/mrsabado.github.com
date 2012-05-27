@@ -1,0 +1,2 @@
+safe: true
+exclude: [Readme.md, Gemfile, Gemfile.lock, Procfile, tmp, config.ru]
