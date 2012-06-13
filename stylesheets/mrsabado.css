@@ -2,3 +2,10 @@ body {
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
+
+brand {
+}
+
+img.sidebar-image {
+	width: 100%;
+}
