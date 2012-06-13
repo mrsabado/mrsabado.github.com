@@ -17,7 +17,7 @@
 	<![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="subnav" data-offset="100" data-twttr-rendered="true">
 	<!-- Fixed Navbar
 	================================= -->
 	<div class="navbar navbar-fixed-top">
@@ -37,6 +37,7 @@
 						<li{% if page.active == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Girls Tennis</a></li>
 						<li{% if page.active == 'boystennis' %} class="active"{% endif %}><a href="/boystennis.html">Boys Tennis</a></li>
 						<li{% if page.active == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
+						<li class="divider-vertical"></li>
 						<li{% if page.active == 'whs' %} class="active"{% endif %}><a href="http://www.woodbridgehigh.org/">WHS</a></li>
 						<li{% if page.active == 'iusd' %} class="active"{% endif %}><a href="http://iusd.org/">IUSD</a></li>
 					</ul>
@@ -44,14 +45,46 @@
 			</div>
 		</div>
 	</div>
+	
+	<header class="jumbotron subhead" id="overview">
+		<div class="subnav subnav-fixed">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li{% if page.active == 'prealgebra' %} class="active"{% endif %}><a href="#">Announcements</a></li>
+					<li{% if page.active == 'pahomework' %} class="active"{% endif %}><a href="/prealgebrahomework.html">Homework</a></li>
+					<li{% if page.active == 'pacalendar' %} class="active"{% endif %}><a href="/prealgebracalendar.html">Calendar</a></li>
+					<li{% if page.active == 'grades' %} class="active"{% endif %}><a href="/grades.html">Grades</a></li>
+					<li{% if page.active == 'pavideos' %} class="active"{% endif %}><a href="http://www.khanacademy.org/math/arithmetic">Pre-Algebra Videos</a></li>
+					<li{% if page.active == 'padocuments' %} class="active"{% endif %} class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#.html">Documents
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+						    <li>
+								<a href="/pdf/pasyllabus.pdf" target="_blank">Syllabus</a>
+							</li>
+							 <li>
+								<a href="/pdf/expectations.pdf" target="_blank">Expectations</a>
+							</li>
+							<li class="divider"></li>
+							</li>
+							 <li>
+								<a href="/pdf/rules.pdf" target="_blank">Rules</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
 
-	<div class="container">
+
 		{{content}}
-
-		<footer>
-			<p>&copy; Saba.do 2012</p>
-		</footer>
-	</div> <!-- /container -->
+		<div class="container">
+			<footer>
+				<p>&copy; Saba.do 2012</p>
+			</footer>
+		</div> <!-- /container -->
 
 
 	<!-- Le javascript
