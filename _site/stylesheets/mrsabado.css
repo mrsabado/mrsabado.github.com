@@ -51,3 +51,20 @@ background-repeat: repeat-x;
 border: 1px solid 
 #333333;
 }
+
+div.text-box {
+background-color:
+#e5e5e5;
+padding-right: 12px;
+padding-left: 12px;
+}
+
+.footer {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p {
+  margin-bottom: 0;
+  color: #555;
+}
