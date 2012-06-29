@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Mr. Sabado :: {{page.title}}</title>
+	<title>Mr. Sabado :: Algebra One</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -31,15 +31,15 @@
 				<a class="brand" href="/about.html">Mr. Sabado</a>
 				<div class="nav-collapse">
 					<ul class="nav">
-						<li{% if page.navactive == 'overview' %} class="active"{% endif %}><a href="/">Overview</a></li>
-						<li{% if page.navactive == 'prealgebra' %} class="active"{% endif %}><a href="/prealgebra.html">Pre-Algebra</a></li>
-						<li{% if page.navactive == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Algebra One</a></li>
-						<li{% if page.navactive == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Girls Tennis</a></li>
-						<li{% if page.navactive == 'boystennis' %} class="active"{% endif %}><a href="/boystennis.html">Boys Tennis</a></li>
-						<li{% if page.navactive == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
+						<li><a href="/">Overview</a></li>
+						<li><a href="/prealgebra.html">Pre-Algebra</a></li>
+						<li class="active"><a href="/algebra.html">Algebra One</a></li>
+						<li><a href="/girlstennis.html">Girls Tennis</a></li>
+						<li><a href="/boystennis.html">Boys Tennis</a></li>
+						<li><a href="/contact.html">Contact</a></li>
 						<li class="divider-vertical"></li>
-						<li{% if page.active == 'whs' %} class="active"{% endif %}><a href="http://www.woodbridgehigh.org/" target="_blank">WHS</a></li>
-						<li{% if page.active == 'iusd' %} class="active"{% endif %}><a href="http://iusd.org/" target="_blank">IUSD</a></li>
+						<li><a href="http://www.woodbridgehigh.org/" target="_blank">WHS</a></li>
+						<li><a href="http://iusd.org/" target="_blank">IUSD</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -50,12 +50,12 @@
 		<div class="subnav subnav-fixed">
 			<div class="container">
 				<ul class="nav nav-pills">
-					<li{% if page.subactive == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Announcements</a></li>
-					<li{% if page.subactive == 'alghomework' %} class="active"{% endif %}><a href="/alghomework.html">Homework</a></li>
-					<li{% if page.subactive == 'algcalendar' %} class="active"{% endif %}><a href="/algcalendar.html">Calendar</a></li>
-					<li{% if page.subactive == 'grades' %} class="active"{% endif %}><a href="/grades.html">Grades</a></li>
-					<li{% if page.subactive == 'algvideos' %} class="active"{% endif %}><a href="http://www.khanacademy.org/math/algebra" target="_blank">Algebra Videos</a></li>
-					<li{% if page.subactive == 'algdocuments' %} class="active"{% endif %} class="dropdown">
+					<li><a href="/algebra.html">Announcements</a></li>
+					<li><a href="/alghomework.html">Homework</a></li>
+					<li class="active"><a href="/algcalendar.html">Calendar</a></li>
+					<li><a href="/grades.html">Grades</a></li>
+					<li><a href="http://www.khanacademy.org/math/algebra" target="_blank">Algebra Videos</a></li>
+					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#.html">Documents
 							<b class="caret"></b>
 						</a>
@@ -79,7 +79,9 @@
 	</header>
 
 
-		{{content}}
+		<div class="container">
+	<iframe src="https://www.google.com/calendar/embed?title=Algebra%201&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=saba.do_ek6t68im1k4haed0rlf15kcopo%40group.calendar.google.com&amp;color=%232F6309&amp;src=math%40saba.do&amp;color=%232952A3&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
 		<div class="container">
 			<footer class="footer">
 				<p>Designed and built with all the care in the world by &copy; Saba.do 2012</p>
