@@ -3,6 +3,18 @@ body {
 	padding-bottom: 40px;
 }
 
+p.q {
+font-weight: bold;
+font-style: italic;
+margin-bottom: 0;
+}
+
+h2.q {
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 0;
+}
+
 .navbar-fixed-top .brand {
 padding-right: 0;
 padding-left: 0;
@@ -21,6 +33,11 @@ img.sidebar-image {
 	width: 100%;
 }
 
+img.sidepage-image {
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 .subnav-fixed {
 position: fixed;
 top: 40px;
@@ -72,4 +89,11 @@ padding-left: 12px;
 .thumbnail {
 background-color:
 #e5e5e5;
+}
+
+h7 {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	text-transform: uppercase;
 }

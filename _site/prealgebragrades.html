@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Mr. Sabado :: {{page.title}}</title>
+	<title>Mr. Sabado :: Pre-Algebra</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -31,15 +31,15 @@
 				<a class="brand" href="/about.html">Mr. Sabado</a>
 				<div class="nav-collapse">
 					<ul class="nav">
-						<li{% if page.navactive == 'overview' %} class="active"{% endif %}><a href="/">Overview</a></li>
-						<li{% if page.navactive == 'prealgebra' %} class="active"{% endif %}><a href="/prealgebra.html">Pre-Algebra</a></li>
-						<li{% if page.navactive == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Algebra One</a></li>
-						<li{% if page.navactive == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Girls Tennis</a></li>
-						<li{% if page.navactive == 'boystennis' %} class="active"{% endif %}><a href="/boystennis.html">Boys Tennis</a></li>
-						<li{% if page.navactive == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
+						<li><a href="/">Overview</a></li>
+						<li class="active"><a href="/prealgebra.html">Pre-Algebra</a></li>
+						<li><a href="/algebra.html">Algebra One</a></li>
+						<li><a href="/girlstennis.html">Girls Tennis</a></li>
+						<li><a href="/boystennis.html">Boys Tennis</a></li>
+						<li><a href="/contact.html">Contact</a></li>
 						<li class="divider-vertical"></li>
-						<li{% if page.active == 'whs' %} class="active"{% endif %}><a href="http://www.woodbridgehigh.org/" target="_blank">WHS</a></li>
-						<li{% if page.active == 'iusd' %} class="active"{% endif %}><a href="http://iusd.org/" target="_blank">IUSD</a></li>
+						<li><a href="http://www.woodbridgehigh.org/" target="_blank">WHS</a></li>
+						<li><a href="http://iusd.org/" target="_blank">IUSD</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -50,18 +50,18 @@
 		<div class="subnav subnav-fixed">
 			<div class="container">
 				<ul class="nav nav-pills">
-					<li{% if page.subactive == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Announcements</a></li>
-					<li{% if page.subactive == 'alghomework' %} class="active"{% endif %}><a href="/alghomework.html">Homework</a></li>
-					<li{% if page.subactive == 'algcalendar' %} class="active"{% endif %}><a href="/algcalendar.html">Calendar</a></li>
-					<li{% if page.subactive == 'alggrades' %} class="active"{% endif %}><a href="/alggrades.html">Grades</a></li>
-					<li{% if page.subactive == 'algvideos' %} class="active"{% endif %}><a href="http://www.khanacademy.org/math/algebra" target="_blank">Algebra Videos</a></li>
-					<li{% if page.subactive == 'algdocuments' %} class="active"{% endif %} class="dropdown">
+					<li><a href="/prealgebra.html">Announcements</a></li>
+					<li><a href="/prealgebrahomework.html">Homework</a></li>
+					<li><a href="/prealgebracalendar.html">Calendar</a></li>
+					<li class="active"><a href="/prealgebragrades.html">Grades</a></li>
+					<li><a href="http://www.khanacademy.org/math/arithmetic" target="_blank">Pre-Algebra Videos</a></li>
+					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#.html">Documents
 							<b class="caret"></b>
 						</a>
 						<ul class="dropdown-menu">
 						    <li>
-								<a href="/pdf/algebrasyllabus.pdf" target="_blank">Syllabus</a>
+								<a href="/pdf/pasyllabus.pdf" target="_blank">Syllabus</a>
 							</li>
 							 <li>
 								<a href="/pdf/expectations.pdf" target="_blank">Expectations</a>
@@ -79,13 +79,35 @@
 	</header>
 
 
-		{{content}}
+		<div class="container">
+	<div class="row">
+	<div class="span12">
+		<ul class="thumbnails">
+			<li class="span12">
+				<div class="thumbnail">
+					<a href="https://my.iusd.org/" target="_blank" class="thumbnail">
+						<img src="/images/prealgebra.jpg" alt="Pre-Algebra is fun."/>
+					</a>
+					<div class="caption">
+						<h2>Current Grades:.
+							<small> Want to know your current grade?</small>
+							<p>Your grades may now be viewed on the Parent Portal through the Irvine Unified School District
+							website!</p>  
+							<p>Click on the picture above or <a href="https://my.iusd.org" target="_blank"> here</a> to login.  Check back regularly to see your progress! </p> 
+							<p>To create a student account: <a href="mailto:rsabado@iusd.org?subject=IUSD Grade Account">contact me</a> with your personal email address and I can set it up.  Once I set it up, you need to click "Forgot Password" to set up your password.</p>
+						</h2>
+					</div>
+				</div>
+			</li>
+		</ul>	
+	</div>
+	</div>
+</div>
 		<div class="container">
 			<footer class="footer">
 				<p>Designed and built with all the care in the world by &copy; Saba.do 2012</p>
 			</footer>
-		</div>
-
+		</div> 
 
 	<!-- Le javascript
 	================================================== -->

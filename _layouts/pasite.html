@@ -31,15 +31,15 @@
 				<a class="brand" href="/about.html">Mr. Sabado</a>
 				<div class="nav-collapse">
 					<ul class="nav">
-						<li{% if page.active == 'overview' %} class="active"{% endif %}><a href="/">Overview</a></li>
-						<li{% if page.active == 'prealgebra' %} class="active"{% endif %}><a href="/prealgebra.html">Pre-Algebra</a></li>
-						<li{% if page.active == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Algebra One</a></li>
-						<li{% if page.active == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Girls Tennis</a></li>
-						<li{% if page.active == 'boystennis' %} class="active"{% endif %}><a href="/boystennis.html">Boys Tennis</a></li>
-						<li{% if page.active == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
+						<li{% if page.navactive == 'overview' %} class="active"{% endif %}><a href="/">Overview</a></li>
+						<li{% if page.navactive == 'prealgebra' %} class="active"{% endif %}><a href="/prealgebra.html">Pre-Algebra</a></li>
+						<li{% if page.navactive == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Algebra One</a></li>
+						<li{% if page.navactive == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Girls Tennis</a></li>
+						<li{% if page.navactive == 'boystennis' %} class="active"{% endif %}><a href="/boystennis.html">Boys Tennis</a></li>
+						<li{% if page.navactive == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
 						<li class="divider-vertical"></li>
-						<li{% if page.active == 'whs' %} class="active"{% endif %}><a href="http://www.woodbridgehigh.org/" target="_blank">WHS</a></li>
-						<li{% if page.active == 'iusd' %} class="active"{% endif %}><a href="http://iusd.org/" target="_blank">IUSD</a></li>
+						<li{% if page.navactive == 'whs' %} class="active"{% endif %}><a href="http://www.woodbridgehigh.org/" target="_blank">WHS</a></li>
+						<li{% if page.navactive == 'iusd' %} class="active"{% endif %}><a href="http://iusd.org/" target="_blank">IUSD</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -50,12 +50,12 @@
 		<div class="subnav subnav-fixed">
 			<div class="container">
 				<ul class="nav nav-pills">
-					<li{% if page.active == 'prealgebra' %} class="active"{% endif %}><a href="#">Announcements</a></li>
-					<li{% if page.active == 'pahomework' %} class="active"{% endif %}><a href="/prealgebrahomework.html">Homework</a></li>
-					<li{% if page.active == 'pacalendar' %} class="active"{% endif %}><a href="/prealgebracalendar.html">Calendar</a></li>
-					<li{% if page.active == 'grades' %} class="active"{% endif %}><a href="/grades.html">Grades</a></li>
-					<li{% if page.active == 'pavideos' %} class="active"{% endif %}><a href="http://www.khanacademy.org/math/arithmetic" target="_blank">Pre-Algebra Videos</a></li>
-					<li{% if page.active == 'padocuments' %} class="active"{% endif %} class="dropdown">
+					<li{% if page.subactive == 'prealgebra' %} class="active"{% endif %}><a href="/prealgebra.html">Announcements</a></li>
+					<li{% if page.subactive == 'pahomework' %} class="active"{% endif %}><a href="/prealgebrahomework.html">Homework</a></li>
+					<li{% if page.subactive == 'pacalendar' %} class="active"{% endif %}><a href="/prealgebracalendar.html">Calendar</a></li>
+					<li{% if page.subactive == 'pagrades' %} class="active"{% endif %}><a href="/prealgebragrades.html">Grades</a></li>
+					<li{% if page.subactive == 'pavideos' %} class="active"{% endif %}><a href="http://www.khanacademy.org/math/arithmetic" target="_blank">Pre-Algebra Videos</a></li>
+					<li{% if page.subactive == 'padocuments' %} class="active"{% endif %} class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#.html">Documents
 							<b class="caret"></b>
 						</a>
