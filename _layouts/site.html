@@ -17,10 +17,9 @@
 	<![endif]-->
 </head>
 
-<body>
-	<!-- Fixed Top Navbar
-	==================================  -->
-
+<body data-spy="scroll" data-target="subnav" data-offset="100" data-twttr-rendered="true">
+	<!-- Fixed Navbar
+	================================= -->
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
@@ -31,19 +30,18 @@
 				</a>
 				<a class="brand" href="/about.html">Mr. Sabado</a>
 				<div class="nav-collapse">
-					<ul class="nav" align="right">
-					<!--
-						<li{% if page.active == 'overview' %} class="active"{% endif %}><a href="/">Overview</a></li>
-						<li{% if page.active == 'prealgebra' %} class="active"{% endif %}><a href="/prealgebra.html">Pre-Algebra</a></li>
-						<li{% if page.active == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Algebra One</a></li>
-						<li{% if page.active == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Girls Tennis</a></li>
-						<li{% if page.active == 'boystennis' %} class="active"{% endif %}><a href="/boystennis.html">Boys Tennis</a></li>
-						<li{% if page.active == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
-					-->
-						<li{% if page.active == 'whs' %} class="active"{% endif %}><a href="http://www.woodbridgehigh.org/">Woodbridge High School</a></li>
-						<li{% if page.active == 'iusd' %} class="active"{% endif %}><a href="http://iusd.org/">Irvine Unified School District</a></li>
+					<ul class="nav">
+						<li{% if page.navactive == 'overview' %} class="active"{% endif %}><a href="/">Overview</a></li>
+						<li{% if page.navactive == 'prealgebra' %} class="active"{% endif %}><a href="/prealgebra.html">Pre-Algebra</a></li>
+						<li{% if page.navactive == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Algebra One</a></li>
+						<li{% if page.navactive == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Girls Tennis</a></li>
+						<li{% if page.navactive == 'boystennis' %} class="active"{% endif %}><a href="/boystennis.html">Boys Tennis</a></li>
+						<li{% if page.navactive == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
+						<li class="divider-vertical"></li>
+						<li{% if page.active == 'whs' %} class="active"{% endif %}><a href="http://www.woodbridgehigh.org/" target="_blank">WHS</a></li>
+						<li{% if page.active == 'iusd' %} class="active"{% endif %}><a href="http://iusd.org/" target="_blank">IUSD</a></li>
 					</ul>
-				</div>
+				</div><!--/.nav-collapse -->
 			</div>
 		</div>
 	</div>

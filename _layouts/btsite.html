@@ -31,12 +31,12 @@
 				<a class="brand" href="/about.html">Mr. Sabado</a>
 				<div class="nav-collapse">
 					<ul class="nav">
-						<li{% if page.active == 'overview' %} class="active"{% endif %}><a href="/">Overview</a></li>
-						<li{% if page.active == 'prealgebra' %} class="active"{% endif %}><a href="/prealgebra.html">Pre-Algebra</a></li>
-						<li{% if page.active == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Algebra One</a></li>
-						<li{% if page.active == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Girls Tennis</a></li>
-						<li{% if page.active == 'boystennis' %} class="active"{% endif %}><a href="/boystennis.html">Boys Tennis</a></li>
-						<li{% if page.active == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
+						<li{% if page.navactive == 'overview' %} class="active"{% endif %}><a href="/">Overview</a></li>
+						<li{% if page.navactive == 'prealgebra' %} class="active"{% endif %}><a href="/prealgebra.html">Pre-Algebra</a></li>
+						<li{% if page.navactive == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Algebra One</a></li>
+						<li{% if page.navactive == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Girls Tennis</a></li>
+						<li{% if page.navactive == 'boystennis' %} class="active"{% endif %}><a href="/boystennis.html">Boys Tennis</a></li>
+						<li{% if page.navactive == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
 						<li class="divider-vertical"></li>
 						<li{% if page.active == 'whs' %} class="active"{% endif %}><a href="http://www.woodbridgehigh.org/" target="_blank">WHS</a></li>
 						<li{% if page.active == 'iusd' %} class="active"{% endif %}><a href="http://iusd.org/" target="_blank">IUSD</a></li>
@@ -50,11 +50,11 @@
 		<div class="subnav subnav-fixed">
 			<div class="container">
 				<ul class="nav nav-pills">
-					<li{% if page.active == 'boystennis' %} class="active"{% endif %}><a href="#">Announcements</a></li>
-					<li{% if page.active == 'btexpectations' %} class="active"{% endif %}><a href="/gtexpectations.html">Expectations</a></li>
-					<li{% if page.active == 'btcalendar' %} class="active"{% endif %}><a href="/pdf/btcalendar.pdf">2012 Calendar</a></li>
-					<li{% if page.active == 'grades' %} class="active"{% endif %}><a href="/grades.html">Grades</a></li>
-					<li{% if page.active == 'padocuments' %} class="active"{% endif %} class="dropdown">
+					<li{% if page.subactive == 'boystennis' %} class="active"{% endif %}><a href="#">Announcements</a></li>
+			<!--		<li{% if page.subactive == 'btexpectations' %} class="active"{% endif %}><a href="/gtexpectations.html">Expectations</a></li>
+					<li{% if page.subactive == 'btcalendar' %} class="active"{% endif %}><a href="/pdf/btcalendar.pdf">2012 Calendar</a></li>
+					<li{% if page.subactive == 'grades' %} class="active"{% endif %}><a href="/grades.html">Grades</a></li>
+					<li{% if page.subactive == 'padocuments' %} class="active"{% endif %} class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#.html">Documents
 							<b class="caret"></b>
 						</a>
@@ -80,7 +80,8 @@
 								<a href="/pdf/btschedule.pdf" target="_blank">2013 Match Schedule</a>
 							</li>
 						</ul>	
-					</li>
+					</li> 
+					-->
 					<li{% if page.active == 'gowoodbridge' %} class="active"{% endif %}><a href="http://www.gowoodbridge.com" target="_blank">Woodbridge Athletics</a></li>
 					<li{% if page.active == 'gtvideos' %} class="active"{% endif %}><a href="http://www.tennischannel.com/omc/" target="_blank">One Minute Clinics</a></li>
 				</ul>
