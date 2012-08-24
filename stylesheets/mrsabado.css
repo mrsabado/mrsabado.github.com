@@ -80,6 +80,11 @@ h7 {
 	text-indent: -999em;
 	margin-bottom: 30px;
 	opacity: 0.65;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-moz-background-size:cover; 
+	-webkit-background-size:cover; 
+	background-size: 100% cover;
 }
 
 .home-nav a:hover {
@@ -88,7 +93,7 @@ h7 {
 
 .home-nav .contact,
 .home-nav .about {
-	width: 1130px;
+	/*width: 1130px;*/
 	height: 177px;
 }
 
@@ -96,30 +101,30 @@ h7 {
 .home-nav .algebra, 
 .home-nav .girlstennis,
 .home-nav .boystennis {
-	width: 530px;
+	/*width: 530px;*/
 	height: 177px;
 }
 
 .home-nav .contact {
-	background: url(/images/contact.jpg) 0 0 no-repeat;
+	background-image: url(/images/contact.jpg);
 }
 
 .home-nav .about {
-	background: url(/images/about.jpg) 0 0 no-repeat;
+	background-image: url(/images/about.jpg);
 }
 
 .home-nav .prealgebra {
-	background: url(/images/prealgebra.jpg) 0 0 no-repeat;
+	background-image: url(/images/prealgebra.jpg);
 }
 
 .home-nav .algebra {
-	background: url(/images/algebra.jpg) 0 0 no-repeat;
+	background-image: url(/images/algebra.jpg);
 }
 
 .home-nav .girlstennis {
-	background: url(/images/girlstennis.jpg) 0 0 no-repeat;
+	background-image: url(/images/girlstennis.jpg);
 }
 
 .home-nav .boystennis {
-	background: url(/images/boystennis.jpg) 0 0 no-repeat;
+	background-image: url(/images/boystennis.jpg);
 }
