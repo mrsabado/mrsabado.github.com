@@ -77,32 +77,29 @@ h7 {
 	display: block;
 	border: 20px solid #eee;
 	border-radius: 10px;
-	text-indent: -999em;
 	margin-bottom: 30px;
-	opacity: 0.65;
+	opacity: 0.8;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	-moz-background-size:cover; 
 	-webkit-background-size:cover; 
 	background-size: 100% cover;
+	color: #fff;
+	height: 177px;
+	font-family: 'Telex', Helvetica, sans-serif;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 4px;
 }
 
+.home-nav a span {
+	display: block;
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold;
+	padding-top: 70px;
+}
 .home-nav a:hover {
 	opacity: 1;
-}
-
-.home-nav .contact,
-.home-nav .about {
-	/*width: 1130px;*/
-	height: 177px;
-}
-
-.home-nav .prealgebra,
-.home-nav .algebra, 
-.home-nav .girlstennis,
-.home-nav .boystennis {
-	/*width: 530px;*/
-	height: 177px;
+	text-decoration: none;
 }
 
 .home-nav .contact {
