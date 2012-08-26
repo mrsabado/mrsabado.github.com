@@ -42,12 +42,28 @@ h7 {
 
 .subnav-fixed {
 	position: fixed;
-	top: 56px;
+	top: 40px;
 	left: 0;
 	right: 0;
 	z-index: 1020;
 	color:#999999;
 	border-radius: 0;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+color: white;
+background-color: #cc0000;
+}
+
+.nav > li > a:hover {
+text-decoration: none;
+background-color: #ffff00;
+color: #cc0000;
+}
+
+a {
+color: #ffff00;
+text-decoration: none;
 }
 
 .subhead {
@@ -86,8 +102,8 @@ h7 {
 	background-size: 100% cover;
 	color: #fff;
 	height: 177px;
-	font-family: 'Telex', Helvetica, sans-serif;
-	text-shadow: rgba(0,0,0,0.5) 2px 2px 4px;
+	font-family: 'Tenor Sans', Helvetica, sans-serif;
+	text-shadow: rgba(0,0,0,0.5) 3px 3px 6px;
 }
 
 .home-nav a span {
@@ -95,7 +111,7 @@ h7 {
 	text-align: center;
 	font-size: 4em;
 	font-weight: bold;
-	padding-top: 70px;
+	padding-top: 75px;
 }
 .home-nav a:hover {
 	opacity: 1;
