@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Mr. Sabado :: {{page.title}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href='http://fonts.googleapis.com/css?family=Tenor+Sans' rel='stylesheet' type='text/css'>
+	<link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+	<link href="/stylesheets/mrsabado.css" rel="stylesheet">
+	<link href="/stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="subnav" data-offset="100" data-twttr-rendered="true">
+	<!-- Fixed Navbar
+	================================= -->
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="/about.html">Mr. Sabado</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li{% if page.active == 'overview' %} class="active"{% endif %}><a href="/">Overview</a></li>
+						<li{% if page.active == 'prealgebra' %} class="active"{% endif %}><a href="/prealgebra.html">Pre-Algebra</a></li>
+						<li{% if page.active == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Algebra One</a></li>
+						<li{% if page.active == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Girls Tennis</a></li>
+						<li{% if page.active == 'boystennis' %} class="active"{% endif %}><a href="/boystennis.html">Boys Tennis</a></li>
+						<li{% if page.active == 'contact' %} class="active"{% endif %}><a href="/contact.html">Contact</a></li>
+						<li class="divider-vertical"></li>
+						<li{% if page.active == 'whs' %} class="active"{% endif %}><a href="http://www.woodbridgehigh.org/" target="_blank">WHS</a></li>
+						<li{% if page.active == 'iusd' %} class="active"{% endif %}><a href="http://iusd.org/" target="_blank">IUSD</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<header class="top-banner">
+			<div class="row">
+				<div class="span12">
+					<a href="#" class="about">
+						<span>About</span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		{{content}}
+		
+		<div class="container">
+			<footer class="footer">
+				<p>Designed and built with all the care in the world by &copy; Saba.do 2012</p>
+			</footer>
+		</div>
+
+
+	<!-- Le javascript
+	================================================== -->
+	<script src="/javascripts/jquery.min.js"></script>
+	<script src="/javascripts/bootstrap.min.js"></script>
+</body>
+</html>

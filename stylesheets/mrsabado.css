@@ -8,8 +8,14 @@ a {
 	-moz-transition: all 0.25s ease;
 	-o-transition: all 0.25s ease;
 	transition: all 0.25s ease;
+	color: #ffff00;
+	text-decoration: none;
 }
 
+a:hover {
+text-decoration: none;
+}
+	
 p.q {
 	font-weight: bold;
 	font-style: italic;
@@ -61,11 +67,6 @@ background-color: #ffff00;
 color: #cc0000;
 }
 
-a {
-color: #ffff00;
-text-decoration: none;
-}
-
 .subhead {
 	padding-bottom: 0;
 	margin-bottom: 50px;
@@ -113,6 +114,7 @@ text-decoration: none;
 	font-weight: bold;
 	padding-top: 75px;
 }
+
 .home-nav a:hover {
 	opacity: 1;
 	text-decoration: none;
@@ -127,7 +129,7 @@ text-decoration: none;
 }
 
 .home-nav .prealgebra {
-	background-image: url(/images/prealgebra.jpg);
+	background-image: url(/images/math.jpg);
 }
 
 .home-nav .algebra {
@@ -140,4 +142,168 @@ text-decoration: none;
 
 .home-nav .boystennis {
 	background-image: url(/images/boystennis.jpg);
+}
+
+.top-banner a {
+	display: block;
+	border: 0px solid #eee;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-moz-background-size:cover; 
+	-webkit-background-size:cover; 
+	background-size: 100% cover;
+	color: #fff;
+	height: 177px;
+	font-family: 'Tenor Sans', Helvetica, sans-serif;
+	text-shadow: rgba(0,0,0,0.5) 3px 3px 6px;
+}
+
+.top-banner a span {
+	display: block;
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold;
+	padding-top: 75px;
+}
+
+.top-banner a:hover {
+	text-decoration: none;
+}
+	
+.top-banner .contact {
+	background-image: url(/images/contact.jpg);
+	margin-top: 12px;
+}
+
+.top-banner .prealgebra {
+	background-image: url(/images/math.jpg);
+}
+
+.top-banner .algebra {
+	background-image: url(/images/algebra.jpg);
+}
+
+.top-banner .girlstennis {
+	background-image: url(/images/girlstennis.jpg);
+}
+
+.top-banner .boystennis {
+	background-image: url(/images/boystennis.jpg);
+}
+
+.top-banner .about {
+	background-image: url(/images/about.jpg);
+	margin-top: 12px;
+}
+
+.contact-nav p {
+	width: 100%;
+	margin-top: -7px;
+	padding: 12px 0 10px;
+	line-height: 1em;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+	background: rgba(0, 0, 0, 0.075);
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.contact-nav a {
+	display: block;
+	border: 0px solid #eee;
+	border-radius: 10px;
+	margin-bottom: 0px;
+	opacity: 0.65;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-moz-background-size:cover; 
+	-webkit-background-size:cover; 
+	background-size: 100% cover;
+	color: #fff;
+	height: 177px;
+	font-family: 'Tenor Sans', Helvetica, sans-serif;
+	text-shadow: rgba(0,0,0,0.5) 3px 3px 6px;
+}
+
+.contact-nav a span {
+	display: block;
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold;
+	padding-top: 75px;
+}
+
+.contact-nav a:hover {
+	opacity: 1;
+	text-decoration: none;
+}
+
+.contact-nav .math {
+	background-image: url(/images/prealgebra.jpg);
+}
+
+.contact-nav .tennis {
+	background-image: url(/images/tennis.jpg);
+}
+
+.table a {
+	color: #999999;
+	text-decoration: none;
+}
+
+.table a:hover {
+	color: #cc0000;
+	text-decoration: none;
+}
+
+.sidepage-image  {
+	display: block;
+	width: 90%;
+	padding-left: 10px;
+	padding-bottom: 15px;
+	
+}
+
+.announcements  li {
+	list-style: none;
+	border-bottom: 1px solid #d9d9d9;
+	padding: 2em;
+}
+
+.announcements  li:nth-child(odd) {
+	background-color:#f9f9f9;
+}
+
+article.letter {
+	border: 1px solid red;
+	width: 100%;
+}
+
+article.letter section {
+	float: left;
+	width: 50%;
+	background: green;
+}
+
+article.letter section.first p {
+	padding-right: 6em;
+}
+
+article.letter section.last p {
+	padding-left: 6em;
+}
+
+article.letter p.salutation,
+article.letter p.byebye {
+	font-size: 2em;
+}
+
+article.letter p.byebye {
+	text-align: center;
 }
