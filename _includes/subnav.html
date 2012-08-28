@@ -1,0 +1,9 @@
+{% if page.navactive == 'prealgebra' %}
+  {% include prealgebra_subnav.html %}
+{% elsif page.navactive == 'algebra' %}
+  {% include algebra_subnav.html %}
+{% elsif page.navactive == 'girlstennis' %}
+  {% include girlstennis_subnav.html %}
+{% elsif page.navactive == 'boystennis' %}
+  {% include boystennis_subnav.html %}
+{% endif %}

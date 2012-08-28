@@ -1,0 +1,25 @@
+<ul class="nav nav-pills">
+	<li{% if page.subactive == 'algebra' %} class="active"{% endif %}><a href="/algebra.html">Announcements</a></li>
+	<li{% if page.subactive == 'alghomework' %} class="active"{% endif %}><a href="/alghomework.html">Homework</a></li>
+	<li{% if page.subactive == 'algcalendar' %} class="active"{% endif %}><a href="/algcalendar.html">Calendar</a></li>
+	<li{% if page.subactive == 'alggrades' %} class="active"{% endif %}><a href="/alggrades.html">Grades</a></li>
+	<li{% if page.subactive == 'algvideos' %} class="active"{% endif %}><a href="http://www.khanacademy.org/math/algebra" target="_blank">Algebra Videos</a></li>
+	<li{% if page.subactive == 'algdocuments' %} class="active"{% endif %} class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#.html">
+		Documents
+		<b class="caret"></b>
+	</a>
+	<ul class="dropdown-menu">
+		<li>
+			<a href="/pdf/algebrasyllabus.pdf" target="_blank">Syllabus</a>
+		</li>
+		<li>
+			<a href="/pdf/common/procedures.pdf" target="_blank">Procedures</a>
+		</li>
+		<li class="divider"></li>
+		<li>
+			<a href="/pdf/rules.pdf" target="_blank">Rules</a>
+		</li>
+	</ul>
+</li>
+</ul>

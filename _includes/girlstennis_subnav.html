@@ -1,0 +1,35 @@
+<ul class="nav nav-pills">
+	<li{% if page.subactive == 'girlstennis' %} class="active"{% endif %}><a href="/girlstennis.html">Announcements</a></li>
+	<!--	<li{% if page.subactive == 'gtcontract' %} class="active"{% endif %}><a href="/pdf/gtcontract.pdf" target="_blank">Team Contract and Expectations</a></li> -->
+	<li{% if page.subactive == 'gtcalendar' %} class="active"{% endif %}><a href="/pdf/gtschedule.pdf" target="_blank">2012 Match Schedule</a></li>
+	<li{% if page.subactive == 'gtgrades' %} class="active"{% endif %}><a href="/gtgrades.html">Grades</a></li>
+	<li{% if page.subactive == 'padocuments' %} class="active"{% endif %} class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#.html">Documents
+		<b class="caret"></b>
+	</a>
+	<ul class="dropdown-menu">
+		<li>
+			<a href="/pdf/girlstryapp.pdf" target="_blank">Tryout Application</a>
+		</li>
+		<li class="divider"></li>
+		<li>
+			<a href="http://www.gowoodbridge.com/Athlete%20Privacy/privacy.html" target="_blank">Athlete Priavcy</a>
+		</li>
+		<li>
+			<a href="http://www.gowoodbridge.com/athletic_screenings/screenings.html" target="_blank">Athletic Clearance Forms</a>
+		</li>
+		<li>
+			<a href="http://www.gowoodbridge.com/cofc.html" target="_blank">Code of Conduct</a>
+		</li>
+		<li class="divider"></li>
+		<li>
+			<a href="http://iusd.org/parent_resources/AthleticProgram-AthleticsHandbook.pdf" target="_blank">Student Athlete Handbook</a>
+		</li>
+		<li>
+			<a href="http://iusd.org/parent_resources/AthleticProgram-ParentsHandbook.pdf" target="_blank">Parent Handbook</a>
+		</li>		 
+	</ul>	
+</li>
+<li{% if page.active == 'gowoodbridge' %} class="active"{% endif %}><a href="http://www.gowoodbridge.com" target="_blank">Woodbridge Athletics</a></li>
+<li{% if page.active == 'gtvideos' %} class="active"{% endif %}><a href="http://www.tennischannel.com/omc/" target="_blank">One Minute Clinics</a></li>
+</ul>
