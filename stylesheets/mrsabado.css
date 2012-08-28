@@ -87,13 +87,13 @@ h7 {
 
 .nav-pills > .active > a, .nav-pills > .active > a:hover {
 color: #ffff00;
-background-color: #ff0000;
+background-color: #cc0033;
 }
 
 .nav > li > a:hover {
 text-decoration: none;
 background-color: #ffff00;
-color: #ff0000;
+color: #cc0033;
 }
 
 .subhead {
