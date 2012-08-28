@@ -130,11 +130,27 @@ color: #cc0033;
   color: #555;
 }
 
+.home-nav p {
+	width: 100%;
+	margin-top: -7px;
+	padding: 12px 0 10px;
+	line-height: 1em;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+	background: rgba(0, 0, 0, 0.075);
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
 .home-nav a {
 	display: block;
-	border: 20px solid #eee;
+	border: none;
 	border-radius: 10px;
-	margin-bottom: 30px;
+	margin-top: 30px;
 	opacity: 0.8;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -320,15 +336,23 @@ color: #cc0033;
 	background-color:#f9f9f9;
 }
 
+.announcements a {
+	color:#cc0033;
+}
+
+.announcements a:hover {
+	color:#bbb;
+}
+
 article.letter {
-	border: 1px solid red;
+	border: none;
 	width: 100%;
 }
 
 article.letter section {
 	float: left;
 	width: 50%;
-	background: green;
+	background: none;
 }
 
 article.letter section.first p {
@@ -341,9 +365,10 @@ article.letter section.last p {
 
 article.letter p.salutation,
 article.letter p.byebye {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 article.letter p.byebye {
-	text-align: center;
+	text-align: right;
 }
+
