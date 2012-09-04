@@ -13,7 +13,8 @@ a {
 }
 
 a:hover {
-text-decoration: none;
+	text-decoration: none;
+
 }
 	
 p.q {
@@ -118,6 +119,17 @@ color: #cc0033;
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs .dropdown-toggle:hover .caret, .nav-pills .dropdown-toggle:hover .caret {
+	border-top-color: #c03;
+	border-bottom-color: #c03;
+}
+
+.nav-tabs .dropdown-toggle .caret, .nav-pills .dropdown-toggle .caret {
+	border-top-color: #999999;
+	border-bottom-color: #999999;
+	margin-top: 6px;
 }
 
 .footer {
