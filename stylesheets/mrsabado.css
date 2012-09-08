@@ -38,6 +38,18 @@ h7 {
 	text-transform: uppercase;
 }
 
+.hero-unit p {
+	font-size: 2em;
+	text-align: center;
+	line-height: 1.75em;
+	font-weight: bold;
+}
+
+.hero-unit p small{
+	font-size: 1em;
+	font-weight: normal;
+}
+
 .navbar-inner {
 	background-color: #2C2C2C;
 	background-image: -moz-linear-gradient(top, #000, #222);
