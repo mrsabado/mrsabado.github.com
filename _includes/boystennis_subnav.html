@@ -1,9 +1,21 @@
 <ul class="nav nav-pills">
 	<li{% if page.subactive == 'boystennis' %} class="active"{% endif %}><a href="/boystennis/">Announcements</a></li>
-	<!--		
-	<li{% if page.subactive == 'gtcontract' %} class="active"{% endif %}><a href="/pdf/gtcontract.pdf" target="_blank">Team Contract and Expectations</a></li> 
-	<li{% if page.subactive == 'gtcalendar' %} class="active"{% endif %}><a href="/pdf/gtschedule.pdf" target="_blank">2012 Match Schedule</a></li>
-	-->
+	<li{% if page.subactive == 'gtresults' %} class="active"{% endif %} class="dropdown">
+	<a class="dropdown-toggle" data-toggle="dropdown" href="#.html">Match Results
+		<b class="caret"></b>
+	</a>
+	<ul class="dropdown-menu">
+		<li>
+			<a href="/boystennis/pdf/foothill.pdf" target="_blank">2/21: Foothill</a>
+		</li>
+		
+		<li class="divider"></li>
+		<!--
+		<li>
+			<a href="/pdf/girlstennis/northwood1.pdf" target="_blank">9/20: Northwood (H)</a>
+		</li>
+		-->
+		</ul>
 	<li{% if page.subactive == 'btgrades' %} class="active"{% endif %}><a href="/boystennis/grades.html">Grades</a></li>
 	<li{% if page.subactive == 'padocuments' %} class="active"{% endif %} class="dropdown">
 	<a class="dropdown-toggle" data-toggle="dropdown" href="#.html">Documents
