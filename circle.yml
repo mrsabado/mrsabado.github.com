@@ -1,15 +1,13 @@
 dependencies:
   override:
     - bundle install
-    - gem install s3_website
-  cache_directories:
-     - "~/.rvm"
 test:
   override:
-    - "exit 0"
+    - bundle exec jekyll
+    - bundle exec s3_website push --dry-run
 deployment:
   production:
     branch: master
     commands:
       - bundle exec jekyll
-      - s3_website push
+      - bundle exec s3_website push
