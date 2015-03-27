@@ -1,6 +1,6 @@
-s3_id: AKIAIARNSRFQ54BRW2FA
-s3_secret: 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
-s3_bucket: whs.saba.do
+s3_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+s3_secret: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+s3_bucket: <%= ENV['S3_BUCKET_STORAGE'] %>
 
 # Below are examples of all the available configurations.
 # See README for more detailed info on each of them.
