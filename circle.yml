@@ -6,4 +6,4 @@ deployment:
     branch: master
     commands:
       - bundle exec jekyll
-      - s3_website push
+      - ./vendor/bundle/bin/s3_website push
