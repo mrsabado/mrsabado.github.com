@@ -5,6 +5,5 @@ deployment:
   production:
     branch: master
     commands:
-      - '[[ ! -s "$(git rev-parse --git-dir)/shallow" ]] || git fetch --unshallow'
-      - git push git@heroku.com:mrsabado-production.git $CIRCLE_SHA1:master -f
-      - curl -sSfL --retry 5 http://whs.saba.do > /dev/null
+      - bundle exec jekyll
+      - s3_website push
