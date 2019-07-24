@@ -1,0 +1,68 @@
+version: 2
+default_docker_image: &default_docker_image
+  image: circleci/ruby:2.4.5-node-browsers
+defaults: &defaults
+  docker:
+    - *default_docker_image
+restore_bundler_cache: &restore_bundler_cache
+  restore_cache:
+    keys:
+      - gem-cache-v3-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+      - gem-cache-v3-{{ arch }}-{{ .Branch }}
+      - gem-cache-v3
+bundle_install: &bundle_install
+  run:
+    name: Install dependencies via bundler
+    command: bundle check || bundle install --path vendor/bundle
+
+jobs:
+  install_bundler_dependencies:
+    <<: *defaults
+    steps:
+      - checkout
+      - *restore_bundler_cache
+      - run:
+          name: Which version of Ruby?
+          command: ruby -v
+      - run:
+          name: Which version of bundler?
+          command: bundle -v
+      - *bundle_install
+      - save_cache:
+          key: gem-cache-v3-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+  autodeploy:
+    <<: *defaults
+    steps:
+      - checkout
+      - *restore_bundler_cache
+      - *bundle_install
+      - run:
+          name: Build Site
+          command: bundle exec jekyll
+      - run:
+          name: Install Python dependencies
+          command: |
+            sudo apt-get -y -qq update
+            sudo apt-get -y -qq install python-dev python-pip
+      - run:
+          name: Install awscli
+          command: pip install awscli --upgrade --user
+      - run:
+          name: Deploy Site
+          command: ~/.local/bin/aws s3 sync _site s3://$S3_BUCKET_STORAGE --delete
+
+workflows:
+  version: 2
+  build-test-and-deploy:
+    jobs:
+      - install_bundler_dependencies
+      - autodeploy:
+          requires:
+            - install_bundler_dependencies
+          filters:
+            branches:
+              only:
+                - master

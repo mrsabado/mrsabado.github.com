@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.4.5'
 
 gem 'jekyll'
+gem 'iconv'
 gem 'rdiscount'
 gem 'RedCloth'
 gem 'foreman'
-gem 's3_website'

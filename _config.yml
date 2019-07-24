@@ -1,3 +1,3 @@
 safe: true
 markdown: rdiscount
-exclude: [Readme.markdown, Gemfile, Gemfile.lock, Procfile, tmp, config.ru, circle.yml, Rakefile]
+exclude: [Readme.markdown, Gemfile, Gemfile.lock, Procfile, tmp, config.ru, .circleci, Rakefile, vendor]
